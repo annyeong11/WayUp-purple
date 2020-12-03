@@ -1,0 +1,240 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #201b2d;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(73,59,96);
+background: -moz-linear-gradient(135deg, rgba(73,59,96,1) 0%, rgba(42,34,64,1) 100%);
+background: -webkit-linear-gradient(135deg, rgba(73,59,96,1) 0%, rgba(42,34,64,1) 100%);
+background: linear-gradient(135deg, rgba(73,59,96,1) 0%, rgba(42,34,64,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#493b60",endColorstr="#2a2240",GradientType=1);
+color: white;
+padding-bottom: 225px;
+}
+
+.logo {
+    padding-top: 100px;
+}
+
+.wrapper {
+    display: flex; justify-content: space-between;
+}
+
+.offer {
+    margin-top: 176px;
+    width: 490px;
+}
+
+span {
+    color: #48ed8e;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.intro {
+    margin-bottom: 37px;
+    width: 380px;
+    margin-top: 30px;
+}
+
+.btn {
+    font-family: Montserrat, sans-serif;
+    background: #ed9619;
+    color: #ffffff;
+    width: 205px;
+    border-radius: 100px;
+    padding: 19px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: #a56a18;
+}
+
+.desktop {
+    margin-top: 72px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.learn {
+    padding-top: 110px;
+    padding-bottom: 130px;
+}
+
+.skills {
+    display: flex; justify-content: space-between;
+    margin-top: 70px;
+}
+
+.skill {
+    width: 350px; 
+    background: url(../img/icon1.jpg) no-repeat left top;
+    padding-left: 100px;
+}
+
+.skill-t {
+    font-size: 18px; 
+    
+}
+
+.skill-text {
+    margin-top: 7px;
+}
+
+.skill-free {
+    width: 380px;
+    background: url(../img/icon2.jpg) no-repeat;
+}
+
+.skill-life {
+    background: url(../img/icon3.jpg) no-repeat;
+}
+
+.mail {
+    background: #efecf4;
+    padding-top: 175px;
+    padding-bottom: 190px;
+}
+
+.input {
+    width: 475px;
+    border: 1px solid #bfb8d1;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 100px;
+    height: 55px;
+    padding-left: 40px;
+}
+
+.btn_form {
+    border: 0;
+    cursor: pointer;
+    display: inline;
+    margin-left: 15px;
+}
+
+.form {
+    margin-top: 45px;
+}
+
+footer {
+    background: #201b2d;
+    padding: 30px 0;
+}
+
+.credits {
+    color: #d4cee3;
+    font-size: 14px;
+    /* margin: 0; */
+}
+
+
+/* Responsive */
+
+/* 992px-1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* 768px-992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .offer {
+        width: auto;
+    }
+
+    .intro {
+        width: auto;
+    }
+
+    .desktop {
+        display: block;
+        width: 549px;
+        margin: 72px auto 0;
+    }
+
+    .skills {
+        flex-direction: column;
+        width: auto;
+        
+    }
+
+    .skill {
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+
+/* 576px-768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .btn_form {
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+}
+
+/* 0px-576px (actually 320px-576px)*/
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+
+    .desktop {
+        display: block;
+        /* margin: 72px auto 0; */
+        height: 260px;
+        width: 90%;
+    }
+}
